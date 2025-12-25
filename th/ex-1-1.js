@@ -11,6 +11,15 @@
 
 // Start coding here
 
+function findNumberIndex(numbers, targetNumber) {
+  for (let i of numbers) {
+    if (i === targetNumber) {
+      return numbers.indexOf(i);
+    }
+  }
+  return -1;
+}
+
 const numbers1 = [10, 30, 5, 20, 55];
 console.log(findNumberIndex(numbers1, 55)); // 4
 
